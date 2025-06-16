@@ -22,8 +22,8 @@ public class HdfcLogin {
 
 		Actions act = new Actions(driver);
 		act.moveToElement(login).click(driver.findElement(By.xpath("(//div[@class='login_link'])[1]"))).perform();
-		Set<String> neww = driver.getWindowHandles();
-		Iterator<String> i = neww.iterator();
+		Set<String> new = driver.getWindowHandles();
+		Iterator<String> i = new.iterator();
 		String parent = i.next();
 		String child = i.next();
 		driver.switchTo().window(child);
